@@ -1,9 +1,19 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: rgb(0, 0, 0);
     background-image: url('background.jpg');
     background-attachment: fixed;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
+
+main {
+    flex: 1 0 auto;
+}
+
 
 h1 {
     color: rgb(255, 255, 255);
@@ -24,34 +34,36 @@ p {
     text-align: center;
 }
 
-.history {
-    background-color: rgb(0, 0, 0);
+.about {
+    backdrop-filter: blur(50px);
     width: 100%;
     height: 500px;
     margin: auto;
     position: relative;
+    display: flex;
 }
 
 .script {
     position: relative;
+    font-size: 20px;
 }
 
 .product1 {
     background-color: #222cf2;
     width: 100px;
     height: 100px;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-
-/* .history_pic {
-    
-} */
 
 .product2 {
     background-color: #ffffff;
     width: 100px;
     height: 100px;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
 }
 
 
@@ -85,9 +97,12 @@ p {
     height: 100%;
     width: 100%;
     opacity: 0;
+    backdrop-filter: blur(50px);
     transition: .7s ease;
-    background-color: #000000;
+    /* background-image: url("background_blur.png"); */
     border-radius: 80px;
+    border-color: #ffffff;
+    /* border-width: 100px; */
 }
 
 .text {
