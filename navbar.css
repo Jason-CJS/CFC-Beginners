@@ -1,0 +1,32 @@
+/* Make navbar sticky */
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000; /*elements with higher z-index values appear on top of elements with lower values*/
+  /* background-color: black; */
+}
+
+/* Style the links inside the navigation bar */
+#navbar a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+/* Change the color of links on hover */
+#navbar a:hover {
+  background-color: #ffffff;
+  color: #222cf2;
+  transition: .5s ease;
+}
+
+/* Add a color to the active/current link */
+#navbar a.active {
+  background-color: #222cf2;
+  color: rgb(255, 255, 255);
+}
